@@ -47,10 +47,12 @@
   .subMain{ flex-direction: column; gap: 3vh; margin-top: 4vh; }
   .figma{ font-size: 40px; }
   .pic{ width: 80vw; height: auto; }
+  .main{ padding-top: 4vh; }
   .snoop{ left: 8vw; top: 0; height: 16vh; }
 }
 @media (max-width: 480px){
   .figma{ font-size: 32px; }
   .snoop{ left: 6vw; height: 14vh; }
   .glass{ padding: 3vh 6vw; border-radius: 18px; }
+  .main{ padding-top: 3vh; }
 }

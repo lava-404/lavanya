@@ -45,3 +45,16 @@
 .contacts a:hover{
   text-decoration: underline;
 }
+
+/* Phones: remove extra bottom whitespace and tighten vertical rhythm */
+@media (max-width: 768px){
+  .main{ margin-bottom: 6vh; }
+  .mainmain{ gap: 4vh; }
+  .subMain{ height: auto; gap: 3vh; }
+  .catch{ width: 100%; font-size: 4vh; }
+}
+@media (max-width: 480px){
+  .main{ margin-bottom: 2vh; }
+  .mainmain{ gap: 3vh; }
+  .subMain{ height: auto; gap: 2.4vh; }
+}
