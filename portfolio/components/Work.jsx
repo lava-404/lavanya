@@ -4,7 +4,7 @@ const Work = () => {
   const projects = [
     {
       p_name: "DryAf",
-      path: "../public/assets/dryaffinal.mp4", // update with correct path
+      path: "../assets/dryaffinal.mp4", // update with correct path
       info: "About: DryAF, Your sassy hydration sidekick that keeps you drinking water, crushing streaks, and making dehydration your mortal enemy",
       link: "dry-af.vercel.app",
       github: "https://github.com/lava-404/DryAF",
@@ -12,7 +12,7 @@ const Work = () => {
     },
     {
       p_name: "Marvel Magik",
-      path: "../public/assets/mm.mp4", // update with correct path
+      path: "../assets/mm.mp4", // update with correct path
       info: "About:A chaotic little quiz I built because I clearly had better things to do. Answer a bunch of weird Marvel questions and find out which overly dramatic superhero you're spiritually aligned with.",
       link: "marvel-magik.vercel.app",
       github: "https://github.com/lava-404/Marvel-Magik",
@@ -20,7 +20,7 @@ const Work = () => {
     },
     {
       p_name: "DocForge",
-      path: "../public/assets/DocForge.mp4",
+      path: "../assets/DocForge.mp4",
       link: "https://doc-forge-ot9l.vercel.app/",
       github: "https://github.com/laoneya/DocForge",
       info: "An AI tool that generates documentation for your code for easier understanding, it can indent, rectify and document your code",
@@ -28,7 +28,7 @@ const Work = () => {
     },
     {
       p_name: "A Bakery Design",
-      path: "../public/assets/ch.mp4",
+      path: "../assets/ch.mp4",
       link: "",
       github: "https://github.com/lava-404/old_projects",
       info: "A simple website designed a few years back for a bakery to revise my js and html (still proud of the design)",
@@ -36,7 +36,7 @@ const Work = () => {
     },
     {
       p_name: "MintMonk",
-      path: "../public/assets/mim.mp4",
+      path: "../assets/mim.mp4",
       link: "",
       github: "https://github.com/lava-404/mintmonk-main",
       info: "A tool built for people who love to grind and incentivize productivity (work in progress)",

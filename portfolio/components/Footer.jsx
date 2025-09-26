@@ -4,7 +4,7 @@ const Footer = () => {
   return(
     <div className={styles.superMain} id="contact">
       <div className={styles.mainmain}>
-        <img className={styles.divider} src="../public/assets/divider3.png"></img>
+        <img className={styles.divider} src="../assets/divider3.png"></img>
         <div className={styles.subMain}>
           <div className={styles.catch}>think we’d vibe? don’t overthink it, just DM me already 👀</div>
           <div className={styles.contacts}>
