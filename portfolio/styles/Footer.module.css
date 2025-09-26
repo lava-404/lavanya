@@ -1,0 +1,47 @@
+.main{
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10vh;
+}
+
+.mainmain{
+  display: flex;
+  flex-direction: column;
+  gap: 6vh;
+  margin: 0 10vw;
+ 
+}
+
+.subMain{
+  display: flex;
+  justify-content: space-between;
+  height: 30vh;
+
+
+}
+.catch{
+  font-family: 'instrument serif', sans-serif;
+  font-size: 6vh;
+  color: white;
+  width: 50vw;
+}
+
+
+.contacts {
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contacts a{
+  font-family: 'inter', sans-serif;
+  font-weight: 200;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+.contacts a:hover{
+  text-decoration: underline;
+}

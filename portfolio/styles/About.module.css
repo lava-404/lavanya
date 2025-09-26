@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+
+.main{
+  color: white;
+  padding: 6vh 10vw 6vh 10vw;
+}
+
+.title{
+  font-family: 'instrument serif', serif;
+  font-size: 52px;
+  margin-bottom: 6vh;
+}
+
+.points{
+  display: grid;
+  gap: 1rem;
+}
+
+.contacts{
+  display: flex;
+  gap: 1.2rem;
+}
+
+.contacts a{
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* responsive */
+@media (max-width: 1024px){
+  .title{ font-size: 44px; }
+}
+@media (max-width: 768px){
+  .main{ padding: 5vh 6vw 8vh 6vw; }
+  .title{ font-size: 38px; }
+}
+@media (max-width: 480px){
+  .title{ font-size: 32px; }
+  .contacts{ gap: 0.8rem; }
+  .points{ gap: 0.8rem; }
+  .pointer{ font-size: 18px; }
+}
+
+.pointer{
+  font-family: 'inter', sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+}
+

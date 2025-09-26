@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poor+Story&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.main {/* background like your screenshot */
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  font-family: 'inter', sans-serif;
+  position: relative;
+}
+
+.glassFrame{
+  width: 92vw;
+  border-radius: 24px;
+  padding: 3vh 5vw;
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  overflow: hidden; /* cards slide INSIDE the frame */
+  max-width: 1200px;
+}
+
+.track {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+  animation: slide 34s linear infinite;
+  will-change: transform;
+}
+
+.track .cards {
+  animation: none; /* animation runs on the track for seamless loop */
+  margin: 0;
+}
+
+.cards {
+  display: flex;
+  gap: 2rem; /* spacing between cards */
+  animation: slide 14s linear infinite;
+  will-change: transform;
+  margin: 1rem;
+}
+
+.card {
+  min-width: 320px;
+  max-width: 340px;
+  background: #E7E7E7;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  overflow: hidden;
+  flex-shrink: 0;
+
+  padding: 1rem;
+  border: solid white 25px;
+  margin-right: 0; /* removes gap between cards */
+}
+
+.p_name {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+video {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 0.8rem;
+  height: 28vh;
+}
+
+.info, .p_name {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 1rem;
+  font-family: 'instrument serif', sans-serif;
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tool {
+  padding: 0.6rem 0.9rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'inter', sans-serif;
+}
+
+.toolsHeader {
+  margin-bottom: 1rem;
+}
+
+/* Tag colors (customize per tool) */
+.tool:nth-child(1) { background: rgba(97, 147, 231, 0.6); color: #002E76; }  /* React */
+.tool:nth-child(2) { background: rgba(255, 181, 0, 0.6); color: #2E2100; }  /* Node */
+.tool:nth-child(3) { background: rgba(255, 0, 89, 0.4); color: #430017; }  /* Express */
+.tool:nth-child(4) { background: rgba(97, 231, 168, 0.6); color: #004F2A; } /* Bootstrap */
+.tool:nth-child(5) { background: rgba(231, 128, 97, 0.6); color: #9F2500; } /* API/custom */
+.tool:nth-child(6) { background: rgba(202, 142, 255, 0.6); color: #5600A1; }     
+.tool:nth-child(7) { background: rgba(0, 255, 208, 0.6); color: #5A5E2B; }      /* Cron */
+
+/* Infinite sliding animation */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* two copies => seamless loop */
+}
+
+/* Bottom-left illustration */
+.work {
+  position: absolute;
+  left: 10vw;
+  bottom: 3vh;
+  width: clamp(120px, 18vw, 220px);
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .glassFrame{
+    width: 94vw;
+  }
+  .cards{
+    gap: 1.2rem;
+    animation-duration: 16s;
+  }
+  .card{
+    min-width: 300px;
+    max-width: 320px;
+  }
+  video{ height: 24vh; }
+}
+
+@media (max-width: 768px) {
+  .glassFrame{
+    padding: 2vh 3vw;
+    border-radius: 20px;
+  }
+  .cards{
+    gap: 1rem;
+    animation-duration: 18s;
+  }
+  .card{
+    min-width: 240px;
+    max-width: 260px;
+    border-width: 16px;
+  }
+  video{ height: 26vh; }
+  .info, .p_name { font-size: 16px; }
+}
+
+@media (max-width: 480px) {
+  .cards{ animation-duration: 20s; }
+  .card{
+    min-width: 220px;
+    max-width: 230px;
+    padding: 0.8rem;
+    border-width: 14px;
+  }
+  video{ height: 22vh; }
+  .work{ left: 4vw; bottom: 2vh; width: clamp(100px, 26vw, 160px); }
+}
+
+
+.header{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.click{
+  display: flex;
+  gap: 1rem;
+}
