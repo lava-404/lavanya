@@ -54,7 +54,7 @@
   .catch{ width: 100%; font-size: 4vh; }
 }
 @media (max-width: 480px){
-  .main{ margin-bottom: 2vh; }
+  .main{ margin-bottom: 10vh; }
   .mainmain{ gap: 3vh; }
   .subMain{ height: auto; gap: 2.4vh; }
 }

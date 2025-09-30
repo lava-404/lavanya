@@ -8,3 +8,13 @@
   text-align: right;
   color: white;
 }
+
+@media (max-width: 480px){
+  .divider{
+    font-size: 52px;
+    font-family: 'instrument serif', sans-serif;
+    padding: 6vh 10vw 2vh 10vw;
+    text-align: right;
+    color: white;
+  }
+}
